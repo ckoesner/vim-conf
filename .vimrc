@@ -39,7 +39,11 @@ set expandtab
 "set shiftwidth=4
 "set tabstop=4
  
- 
+ set background=dark
+" choose color scheme
+colo desert
+
+
 "------------------------------------------------------------
 " Mappings {{{1
 "
@@ -78,3 +82,9 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
+
+" setting search path for snippets
+let g:UltiSnipsSnippetDirectories=$HOME.'/.vim/mysnippets'
+
+let g:snips_author="ckoesner"
