@@ -1,8 +1,5 @@
 priority -50
 
-##############
-# MATH STUFF #
-##############
 snippet eq "Equation" b
 \begin{equation}
 	$1
@@ -183,7 +180,6 @@ snippet W "Omega" w
 \Omega
 endsnippet
 
-
 snippet C "komplexe Zahlen" w
 \mathbb{C}
 endsnippet
@@ -196,44 +192,43 @@ snippet Z "ganze Zahlen" w
 \mathbb{Z}
 endsnippet
 
-snippet E "\mathbf{E}" w
+snippet E "Erwartungswert" w
 \mathbf{E}
 endsnippet
 
-snippet T "\mathcal{T}" w
+snippet T "Kalligraphie T" w
 \mathcal{T}
 endsnippet
 
-snippet F "\mathcal{F}" w
+snippet F "Kalligraphie F" w
 \mathcal{F}
 endsnippet
 
-snippet U "\mathcal{U}" w
+snippet U "Kalligraphie U" w
 \mathcal{U}
 endsnippet
 
-
-snippet 0set "\emptyset " w
+snippet 0set "Leere Menge " w
 \emptyset 
 endsnippet
 
-snippet ex "\exists " w
+snippet ex "existiert " w
 \exists 
 endsnippet
 
-snippet sm "\setminus " w
+snippet sm "Mengendifferenz " w
 \setminus 
 endsnippet
 
-snippet ld "\ldots" w
+snippet ld "ldots" w
 \ldots
 endsnippet
 
-snippet cd "\cdot" w
+snippet cd "Multiplikationspunkt" w
 \cdot
 endsnippet
 
-snippet cd "\cdots" w
+snippet cd "Punkte" w
 \cdots
 endsnippet
 
@@ -269,7 +264,7 @@ snippet dist "d($1, $2)" w
 d($1, $2)
 endsnippet
 
-snippet fa "\forall " w
+snippet fa "für alle " w
 \forall 
 endsnippet
 
@@ -281,47 +276,47 @@ snippet sum "Summe mit Index" w
 \sum_{$1}^{$2} 
 endsnippet
 
-snippet sup "\sup" w
+snippet sup "Supremum" w
 \sup
 endsnippet
 
-snippet sup "\sup_{$1}" w
+snippet sup "Supremum" w
 \sup_{$1}
 endsnippet
 
-snippet ss "\subset " w
+snippet ss "Echte Teilmenge " w
 \subset 
 endsnippet
 
-snippet sseq "\subseteq " w
+snippet ss "Teilmenge " w
 \subseteq 
 endsnippet
 
-snippet ss2 "\supset " w
+snippet ss "Echte Obermenge " w
 \supset 
 endsnippet
 
-snippet ss2eq "\supseteq " w
+snippet ss "Obermenge " w
 \supseteq 
 endsnippet
 
-snippet bar "\bar{$1}$0" w
+snippet bar "Strich" w
 \bar{$1}$0
 endsnippet
 
-snippet ul "\underline{$1}$0" w
+snippet ul "Unterstrich" w
 \underline{$1}$0
 endsnippet
 
-snippet qd "\quad" w
+snippet qd "Abstand 4 Zeichen" w
 \quad
 endsnippet
 
-snippet qqd "\qquad" w
+snippet qd "Abstand 8 Zeichen" w
 \qquad
 endsnippet
 
-snippet pr "\prod" w
+snippet pr "Produkt" w
 \prod
 endsnippet
 
@@ -337,277 +332,260 @@ snippet preceq "\preccurlyeq" w
 \preccurlyeq
 endsnippet
 
-snippet preccurlyeq "\prod" w
-\prod
-endsnippet
 
-snippet frac "\frac" w
+snippet frac "Bruch ohne Argumente" w
 \frac
 endsnippet
 
-snippet frac "\frac{$1}{$2}$0" w
+snippet frac "Bruch" w
 \frac{$1}{$2}$0
 endsnippet
 
-snippet bs "\backslash" w
+snippet bs "Backslash" w
 \backslash
 endsnippet
 
-snippet bss "\boldsymbol{$1}$0" w
+snippet bss "Symbol fettgedruckt" w
 \boldsymbol{$1}$0
 endsnippet
 
-snippet sq "\sqrt{$1}" w
+snippet sq "Wurzel" w
 \sqrt{$1}
 endsnippet
 
-snippet tim "\times" w
+snippet tim "kreuz" w
 \times
 endsnippet
 
-snippet bin "\binom{$1}{$2}$0" w
+snippet bin "Binomialkoeffizient" w
 \binom{$1}{$2}$0
 endsnippet
 
-snippet leq "\leq " w
+snippet leq "kleiner gleich " w
 \leq 
 endsnippet
 
-snippet geq "\geq " w
+snippet geq "größer gleich " w
 \geq 
 endsnippet
 
-snippet la "\langle" w
-\langle
-endsnippet
-
-snippet ra "\rangle" w
-\rangle
-endsnippet
-
-snippet cu "\cup" w
+snippet cu "Vereinigung klein" w
 \cup
 endsnippet
 
-snippet ca "\cap" w
+snippet ca "Durchschnitt klein" w
 \cap
 endsnippet
 
-
-
-
-snippet cu "\bigcup" w
+snippet cu "Vereinigung groß" w
 \bigcup
 endsnippet
 
-snippet ca "\bigcap" w
+snippet ca "Durchschnitt groß" w
 \bigcap
 endsnippet
 
-snippet lar "\leftarrow" w
+snippet lar "Einzelpfeil links" w
 \leftarrow
 endsnippet
 
-snippet lar "\longleftarrow" w
+snippet lar "Langer Einzelpfeil links" w
 \longleftarrow
 endsnippet
 
-snippet lar "\nwarrow" w
+snippet lar "Links oben" w
 \nwarrow
 endsnippet
 
-snippet lar "\swarrow" w
+snippet lar "Links unten" w
 \swarrow
 endsnippet
 
-snippet Lar "\Leftarrow" w
+snippet Lar "Implikation links" w
 \Leftarrow
 endsnippet
 
-snippet Lar "\Longleftarrow" w
+snippet Lar "Implikation links lang" w
 \Longleftarrow
 endsnippet
 
-snippet rar "\rightarrow" w
-\rightarrow
-endsnippet
 
-snippet rar "\longrightarrow" w
-\longrightarrow
-endsnippet
-
-snippet Rar "\Rightarrow" w
+snippet Rar "Implikationszeichen" w
 \Rightarrow
 endsnippet
 
-snippet Rar "\Longrightarrow" w
+snippet Rar "Implikationszeichen lang" w
 \Longrightarrow
 endsnippet
 
-snippet lr "\leftrightarrow" w
+snippet rar "Einzelpfeil rechts" w
+\rightarrow
+endsnippet
+
+snippet rar "Langer Einzelpfeil rechts" w
+\longrightarrow
+endsnippet
+
+snippet lr "Doppelpfeil" w
 \leftrightarrow
 endsnippet
 
-snippet lr "\longleftrightarrow" w
+snippet lr "Doppelpfeil lang" w
 \longleftrightarrow
 endsnippet
 
-snippet iff "\Leftrightarrow" w
+snippet iff "Äquivalenzzeichen" w
 \Leftrightarrow
 endsnippet
 
-snippet Lr "\Leftrightarrow" w
-\Leftrightarrow
-endsnippet
-
-snippet Lr "\Longleftrightarrow" w
+snippet iff "Äquivalenzzeichen lang" w
 \Longleftrightarrow
 endsnippet
 
-snippet up "\uparrow" w
+snippet up "Pfeil nach oben" w
 \uparrow
 endsnippet
 
-snippet do "\downarrow" w
+snippet do "Pfeil nach unten" w
 \downarrow
 endsnippet
 
-snippet it "\mathit{$1}$0" w
+snippet it "italic" w
 \mathit{$1}$0
 endsnippet
 
-snippet bf "\mathbf{$1}$0" w
+snippet bf "bold" w
 \mathbf{$1}$0
 endsnippet
 
-snippet bb "\mathbb{$1}$0" w
+snippet bb "bb font" w
 \mathbb{$1}$0
 endsnippet
 
-snippet rm "\mathrm{$1}$0" w
+snippet rm "rm font" w
 \mathrm{$1}$0
 endsnippet
 
-snippet sf "\mathsf{$1}$0" w
+snippet sf "sf font" w
 \mathsf{$1}$0
 endsnippet
 
-snippet cal "\mathcal{$1}$0" w
+snippet cal "calligraphic" w
 \mathcal{$1}$0
 endsnippet
 
-snippet frak "\mathfrak{$1}$0" w
+snippet frak "fraktur" w
 \mathfrak{$1}$0
 endsnippet
 
-snippet trm "\textrm{$1}$0" w
+snippet trm "textrm" w
 \textrm{$1}$0
 endsnippet
 
-snippet ov "\overline{$0}" w
+snippet ov "overline" w
 \overline{$0}
 endsnippet
 
-snippet hat "\hat{$1}$0" w
+snippet hat "hat" w
 \hat{$1}$0
 endsnippet
 
-snippet td "\tilde{$1}$0" w
+snippet td "tilde" w
 \tilde{$1}$0
 endsnippet
 
-snippet ch "\check{$1}$0" w
+snippet ch "check" w
 \check{$1}$0
 endsnippet
 
-snippet kr "\left( $1 \right)$0" w
+snippet kr "Klammern rund" w
 \left( $1 \right)$0
 endsnippet
 
-snippet kd "\left\langle $1 \right\rangle$0" w
+snippet kd "Klammern dreieckig" w
 \left\langle $1 \right\rangle$0
 endsnippet
 
-snippet ke "\left[ $1 \right]$0" w
+snippet ke "Klammern eckig" w
 \left[ $1 \right]$0
 endsnippet
 
-snippet kg "\left\\{ $1 \right\\}$0" w
+snippet kg "Klammern geschwungen" w
 \left\\{ $1 \right\\}$0
 endsnippet
 
-snippet floor "\left\lfloor $1 \right\rfloor$0" w
+snippet floor "Klammern abrunden" w
 \left\lfloor $1 \right\rfloor$0
 endsnippet
 
-snippet ceil "\left\lceil $1 \right\rceil$0" w
+snippet ceil "Klammern aufrunden" w
 \left\lceil $1 \right\rceil$0
 endsnippet
 
-snippet tor "(\X, \mathcal{F})" w
+snippet tor "Topologischer Raum" w
 (\X, \mathcal{F})
 endsnippet
 
-snippet mer "(\mathcal{$1}, d)$0" w
+snippet mer "Metrischer Raum" w
 (\mathcal{$1}, d)$0
 endsnippet
 
-snippet folge "\left($1_n\right)_{n \in \mathbb{N}}" w
+snippet folge "Folge" w
 \left($1_n\right)_{n \in \mathbb{N}}
 endsnippet
 
-snippet norm "\left\|$1\right\|$0" w
+snippet norm "Norm" w
 \left\|$1\right\|$0
 endsnippet
 
-snippet abs "\left|$1\right|$0" w
+snippet abs "Absolutbetrag" w
 \left|$1\right|$0
 endsnippet
 
-snippet m2 "m2" w
-$1 & $2 \\ 
+snippet m2 "Zwei Spaltenelemente" w
+$1 & $2 \\\\ 
 $0
 endsnippet
 
-snippet m3 "m3" w
-$1 & $2 & $3 \\ 
+snippet m3 "Drei Spaltenelemente" w
+$1 & $2 & $3 \\\\ 
 $0
 endsnippet
 
-snippet m4 "m4" w
-$1 & $2 & $3 & $4 \\ 
+snippet m4 "Vier Spaltenelemente" w
+$1 & $2 & $3 & $4 \\\\ 
 $0
 endsnippet
 
-snippet m5 "m5" w
-$1 & $2 & $3 & $4 & $5 \\ 
+snippet m5 "Fünf Spaltenelemente" w
+$1 & $2 & $3 & $4 & $5 \\\\ 
 $0
 endsnippet
 
-snippet v2 "v2" w
+snippet v2 "Vektor mit zwei Elementen" w
 \begin{pmatrix}
-$1 \\ $2 
+$1 \\\\ $2 
 \end{pmatrix}
 $0
 endsnippet
 
-snippet v3 "v3" w
+snippet v3 "Vektor mit drei Elementen" w
 \begin{pmatrix}
-$1 \\ $2 \\ $3 
+$1 \\\\ $2 \\\\ $3 
 \end{pmatrix}
 $0
 endsnippet
 
-snippet v4 "v4" w
+snippet v4 "Vektor mit vier Elementen" w
 \begin{pmatrix}
-$1 \\ $2 \\ $3 \\ $4 
+$1 \\\\ $2 \\\\ $3 \\\\ $4 
 \end{pmatrix}
 $0
 endsnippet
 
-snippet v5 "v5" w
+snippet v5 "Vektor mit fünf Elementen" w
 \begin{pmatrix}
-$1 \\ $2 \\ $3 \\ $4 \\ $5 
+$1 \\\\ $2 \\\\ $3 \\\\ $4 \\\\ $5 
 \end{pmatrix}\n$0
 endsnippet
 
