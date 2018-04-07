@@ -85,6 +85,8 @@ let g:UltiSnipsEditSplit="vertical"
 
 
 " setting search path for snippets
-let g:UltiSnipsSnippetDirectories=$HOME.'/.vim/mysnippets'
+
+let g:UltiSnipsSnippetDirectories=['~/.vim/mysnippets']
+" let g:UltiSnipsEnableSnipMate = 0
 
 let g:snips_author="ckoesner"
