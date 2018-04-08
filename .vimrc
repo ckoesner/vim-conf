@@ -7,28 +7,28 @@ set nocompatible
 " and for plugins that are filetype specific.
 filetype indent plugin on
  
-" Enable syntax highlighting
+" enable syntax highlighting
 syntax on
 
-" Show (partial) command in status line.
+" show (partial) command in status line.
 set showcmd
 
-" Show matching brackets.
+" show matching brackets.
 set showmatch
 
-" Do case insensitive matching
+" do case insensitive matching
 set ignorecase
 
-" Do smart case matching
+" do smart case matching
 set smartcase
 
-" Incremental search
+" incremental search
 set incsearch
 
 " automatically save before commands like :next and :make
 set autowrite
 
-" dide buffers when they are abandoned
+" hide buffers when they are abandoned
 set hidden
 
 " enable mouse usage (all modes)
@@ -92,33 +92,21 @@ if filereadable("/etc/vim/vimrc.local")
 endif
 
 
-
-" insert mode mappings
-"------------------------------------------------------------
-inoremap CC <Esc>C
-inoremap SS <Esc>S
-inoremap DD <Esc>dd
-inoremap UU <Esc>u
-
-
-
-
-" Pathogen
+" pathogen
 "------------------------------------------------------------
 
 execute pathogen#infect()
 
 
-
-" YouCompleteMe
+" youcompleteme
 "------------------------------------------------------------
 
-" make YCM compatible with UltiSnips (using supertab)
+" make YCM compatible with UltiSnips
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 
 
-" Ultisnips
+" ultisnips
 "------------------------------------------------------------
 
 " ultisnips edit should split window
@@ -138,20 +126,15 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-p>"
 
-
-function! UltiExpandSnip()
-python3 << EOF
-import sys, vim
-from UltiSnips import UltiSnips_Manager
-UltiSnips_Manager.expand()
-EOF
-return ""
-endfunction
+" insert mode mappings
+"------------------------------------------------------------
+inoremap CC <Esc>C
+inoremap SS <Esc>S
+inoremap DD <Esc>dd
+inoremap UU <Esc>u
 
 
-" autocmd FileType tex inoremap _ <space>subscript<c-r>=UltiExpandSnip()<CR>
-
+" latex file mappings, anon snippets for sub and superscripts
 autocmd FileType tex inoremap <silent> __ __<C-R>=UltiSnips#Anon('_{$1}$0', '__', '', 'i')<CR>
-
-
 autocmd FileType tex inoremap <silent> ^^ ^^<C-R>=UltiSnips#Anon('^{$1}$0', '^^', '', 'i')<CR>
+
