@@ -128,8 +128,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-p>"
 
 " insert mode mappings
 "------------------------------------------------------------
-inoremap CC <Esc>C
-inoremap SS <Esc>S
+
 inoremap DD <Esc>dd
 inoremap UU <Esc>u
 
